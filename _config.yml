@@ -1,18 +1,14 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+name: 逗比章鱼的藏书阁
+description: 个人日志，读书笔记集散地
+meta_description: "个人日志，读书笔记集散地"
 
-# Site settings
-title: 逗比章鱼的藏书阁
-email: alex.marmot@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  个人日志，读书笔记集散地
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-github_username:  alex-marmot
+markdown: redcarpet
+highlighter: pygments
+logo: false
+paginate: 15
+baseurl: /
+domain_name: 'http://alex-marmot.github.io'
 
-# Build settings
-markdown: kramdown
+# Details for the RSS feed generator
+url:            'blog url'
+author:         'alex'
