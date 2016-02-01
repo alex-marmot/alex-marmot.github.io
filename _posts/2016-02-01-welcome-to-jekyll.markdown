@@ -6,6 +6,7 @@ categories: translation
 ---
 # 查找 Nodejs 中内存泄漏的简易指南
 
+## 感谢作者 Alex Kras
 ## [原文链接](http://www.alexkras.com/simple-guide-to-finding-a-javascript-memory-leak-in-node-js)
 
 ### 内容大纲:
