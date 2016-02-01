@@ -1,1 +1,1 @@
-# Person Blog based on Kasper
+# Personal Blog based on Kasper

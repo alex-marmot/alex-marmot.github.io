@@ -57,7 +57,8 @@ end
 
 desc "Push to github"
 task :push do
+  comment = ENV["comment"]
   system "git add -A"
-  system "git commit -m 'update at #{Time.now.utc}'"
+  system "git commit -m 'update at #{Time.now.utc} for #{comment}'"
   system "git push origin master"
 end
