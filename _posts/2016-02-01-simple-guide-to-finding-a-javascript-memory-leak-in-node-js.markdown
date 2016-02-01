@@ -4,7 +4,7 @@ title:  "调试 Nodejs 中内存泄漏简易指南"
 date:   2016-02-01 12:07:14 +0800
 categories: 翻译
 ---
-#### 感谢作者 Alex Kras [原文链接](http://www.alexkras.com/simple-guide-to-finding-a-javascript-memory-leak-in-node-js)
+###### 感谢作者 Alex Kras [原文链接](http://www.alexkras.com/simple-guide-to-finding-a-javascript-memory-leak-in-node-js)
 
 ### 内容大纲:
 - 简介
