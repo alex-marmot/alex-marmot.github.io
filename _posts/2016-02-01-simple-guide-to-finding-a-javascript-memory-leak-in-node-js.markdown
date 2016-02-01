@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "查找 Nodejs 中内存泄漏的简易指南"
+title:  "查找 Nodejs 中内存泄漏简易指南"
 date:   2016-02-01 12:07:14 +0800
 categories: 翻译
 ---
