@@ -2,7 +2,7 @@
 layout: post
 title:  "查找 Nodejs 中内存泄漏的简易指南"
 date:   2016-02-01 12:07:14 +0800
-categories: translation
+categories: 翻译
 ---
 #### 感谢作者 Alex Kras
 
