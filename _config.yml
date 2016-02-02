@@ -2,7 +2,7 @@ name: 逗比章鱼的藏书阁
 description: 个人日志，读书笔记集散地
 meta_description: "个人日志，读书笔记集散地"
 
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 logo: false
 paginate: 15
