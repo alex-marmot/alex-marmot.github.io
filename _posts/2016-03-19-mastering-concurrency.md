@@ -7,9 +7,6 @@ categories: 翻译
 
 ###### 感谢作者 Thijs Cadier [原文链接](http://blog.appsignal.com/blog/2016/03/17/ruby-magic-mastering-concurrency.html)
 
-### 掌握并发
-
-#### 掌握并发
 
 你的应用会同时被多个用户所使用而你也想使你的应用尽可能得快。于是乎，你需要某种方法来处理并发。但你无需恐惧，大部分的 Web 服务器默认都替我们处理好了。但当你需要扩展应用时，你会希望以最有效的方式来利用并发。
 
