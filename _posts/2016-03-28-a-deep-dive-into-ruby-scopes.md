@@ -4,6 +4,8 @@ title: "A Deep Dive into Ruby Scopes"
 date: 2016-03-28
 categories: 翻译
 ---
+
+
 ##### 感谢作者 Thijs Cadier [原文链接](http://blog.codeship.com/a-deep-dive-into-ruby-scopes/?utm_source=rubyweekly&utm_medium=email)
 
 

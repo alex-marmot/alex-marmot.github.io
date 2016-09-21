@@ -5,6 +5,7 @@ date: 2016-03-26
 categories: 翻译
 ---
 
+
 ##### 感谢作者 Thijs Cadier [原文链接](http://blog.thefourthparty.com/these-are-a-few-of-my-favorite-psql-things/?utm_source=postgresweekly&utm_medium=email)
 
 
