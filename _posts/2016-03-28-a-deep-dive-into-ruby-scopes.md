@@ -6,6 +6,7 @@ categories: 翻译
 ---
 ##### 感谢作者 Thijs Cadier [原文链接](http://blog.codeship.com/a-deep-dive-into-ruby-scopes/?utm_source=rubyweekly&utm_medium=email)
 
+
 Ruby 是纯碎以面向对象的方式来设计的。在 Ruby 中，一切皆对象。
 
 面向对象的设计为属性（properties）和动作 （actions）提供了封装。封装的目的在于保护方法和数据

@@ -7,6 +7,7 @@ categories: 翻译
 
 ##### 感谢作者 Thijs Cadier [原文链接](http://blog.thefourthparty.com/these-are-a-few-of-my-favorite-psql-things/?utm_source=postgresweekly&utm_medium=email)
 
+
 ## 我最喜欢的 psql 技巧
 
 我使用 psql 做日常的快速查询，提醒我某张表特定的表结构，或者分析性能以及其事项。这里跟大家分享一些使我的体验更高大上的 psql 命令。
