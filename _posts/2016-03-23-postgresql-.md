@@ -4,7 +4,6 @@ title: "PostgreSQL 即学即用 读书笔记"
 date: 2016-03-23
 categories: Note
 ---
-## PostgreSQL 即学即用读书笔记
 
 ### 第一章 基础知识
 #### PostgreSQL 数据库对象
