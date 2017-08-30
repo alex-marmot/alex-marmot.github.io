@@ -6,16 +6,16 @@ categories: Note
 ---
 
 1.
-`
-  for(var i=0,tags=document.querySelectorAll('iframe[src],frame[src],script[src],link[rel=stylesheet],object[data],embed[src]'),tag;tag=tags[i];i++){
-    var a = document.createElement('a');
-    a.href = tag.src||tag.href||tag.data;
-    if(a.hostname!=location.hostname){
-      console.warn(location.hostname+' 发现第三方资源['+tag.localName+']:'+a.href);
+  `
+    for(var i=0,tags=document.querySelectorAll('iframe[src],frame[src],script[src],link[rel=stylesheet],object[data],embed[src]'),tag;tag=tags[i];i++){
+      var a = document.createElement('a');
+      a.href = tag.src||tag.href||tag.data;
+      if(a.hostname!=location.hostname){
+        console.warn(location.hostname+' 发现第三方资源['+tag.localName+']:'+a.href);
+      }
     }
-  }
-  // 用于发现第三方资源调用
-`
+    // 用于发现第三方资源调用
+  `
 
 2. 引用编码解码 html实体编码，进制编码，十六进制，十进制。JS：unicode编码，十六进制，八进制，纯转义。CSS：八进制，十六进制。
 
