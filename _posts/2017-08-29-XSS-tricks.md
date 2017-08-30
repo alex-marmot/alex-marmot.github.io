@@ -5,7 +5,7 @@ date: 2017-08-29
 categories: Note
 ---
 
-1.
+1. 
   `
     for(var i=0,tags=document.querySelectorAll('iframe[src],frame[src],script[src],link[rel=stylesheet],object[data],embed[src]'),tag;tag=tags[i];i++){
       var a = document.createElement('a');
