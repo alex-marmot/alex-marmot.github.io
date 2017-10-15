@@ -126,10 +126,11 @@ Include rules/*.conf
 
 配置样例:
 
->server { ..... 
+>server { 
+>..... 
 >modsecurity on; 
 >location / { 
->modsecurity_rules_file /usr/local/nginx/conf/modsecurity.conf; 
+>modsecurity_rules_file /usr/local/nginx/conf/modsecurity.conf;  
 >..... 
 >} 
 >}
