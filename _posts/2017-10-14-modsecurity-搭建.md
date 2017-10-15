@@ -128,10 +128,10 @@ Include rules/*.conf
 
 >server {    
 >.....   
->modsecurity on; 
+>modsecurity on;   
 >location / { 
->modsecurity_rules_file /usr/local/nginx/conf/modsecurity.conf;  
->..... 
+>modsecurity_rules_file /usr/local/nginx/conf/modsecurity.conf;    
+>.....   
 >} 
 >}
 
