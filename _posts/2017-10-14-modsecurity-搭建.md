@@ -129,7 +129,7 @@ Include rules/*.conf
 >server {    
 >.....   
 >modsecurity on;   
->location / {   
+>location / {    
 >modsecurity_rules_file /usr/local/nginx/conf/modsecurity.conf;    
 >.....   
 >}   
