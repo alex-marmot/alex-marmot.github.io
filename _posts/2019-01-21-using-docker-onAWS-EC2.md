@@ -5,7 +5,7 @@ date: 2019-01-21
 categories:
 ---
 
-# 在 AWS 上使用 EC2
+# 在 AWS EC2 上使用 Docker
 
 因为公司使用 AWS 所以就其上尝试了 Docker，操作过程如下：
 
