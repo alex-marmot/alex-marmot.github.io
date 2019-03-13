@@ -2,7 +2,7 @@
 layout: post
 title: "USing Docker on AWS EC2"
 date: 2019-01-21
-categories:
+categories: Note
 ---
 
 # 在 AWS EC2 上使用 Docker
