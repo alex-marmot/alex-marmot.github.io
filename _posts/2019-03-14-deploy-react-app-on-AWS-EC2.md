@@ -5,6 +5,8 @@ date: 2019-03-14
 categories: Note
 ---
 
+EC2 上部署 React APP
+
 1. `sudo apt-get update && sudo apt-get upgrade -y`
 2. `sudo apt-get install nginx -y`
 3. `sudo systemctl start nginx`
