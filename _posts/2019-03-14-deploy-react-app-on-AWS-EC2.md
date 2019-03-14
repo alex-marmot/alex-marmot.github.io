@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "2019-03-14-deploy-react-app-on-AWS-EC2"
+title: "deploy-react-app-on-AWS-EC2"
 date: 2019-03-14
-categories:Note
+categories: Note
 ---
 
 1. `sudo apt-get update && sudo apt-get upgrade -y`
