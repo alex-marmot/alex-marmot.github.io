@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "deploy-react-app-on-AWS-EC2"
+title: "Deploy-react-app-on-AWS-EC2"
 date: 2019-03-14
 categories: Note
 ---
