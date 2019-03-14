@@ -5,8 +5,6 @@ date: 2019-01-21
 categories: Note
 ---
 
-# 在 AWS EC2 上使用 Docker
-
 因为公司使用 AWS 所以就其上尝试了 Docker，操作过程如下：
 
 1. 创建实例 我选的是 Ubuntu 免费实例
