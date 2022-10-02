@@ -34,14 +34,6 @@ func main() {
 
 - 第一层，标准库创建 HTTP 服务是通过创建一个 Server(实质是调用了 server.ListenAndServe())。
 ```
-// ListenAndServe listens on the TCP network address srv.Addr and then
-// calls Serve to handle requests on incoming connections.
-// Accepted connections are configured to enable TCP keep-alives.
-//
-// If srv.Addr is blank, ":http" is used.
-//
-// ListenAndServe always returns a non-nil error. After Shutdown or Close,
-// the returned error is ErrServerClosed.
 func (srv *Server) ListenAndServe() error {
 	if srv.shuttingDown() {
 		return ErrServerClosed
@@ -59,45 +51,9 @@ func (srv *Server) ListenAndServe() error {
 ```
 - 第二层，Server 先定义了 net.Listen() 然后 调用了 Serve() 方法。
 ```
-// Serve accepts incoming connections on the Listener l, creating a
-// new service goroutine for each. The service goroutines read requests and
-// then call srv.Handler to reply to them.
-//
-// HTTP/2 support is only enabled if the Listener returns *tls.Conn
-// connections and they were configured with "h2" in the TLS
-// Config.NextProtos.
-//
-// Serve always returns a non-nil error and closes l.
-// After Shutdown or Close, the returned error is ErrServerClosed.
 func (srv *Server) Serve(l net.Listener) error {
-	if fn := testHookServerServe; fn != nil {
-		fn(srv, l) // call hook with unwrapped listener
-	}
-
-	origListener := l
-	l = &onceCloseListener{Listener: l}
-	defer l.Close()
-
-	if err := srv.setupHTTP2_Serve(); err != nil {
-		return err
-	}
-
-	if !srv.trackListener(&l, true) {
-		return ErrServerClosed
-	}
-	defer srv.trackListener(&l, false)
-
-	baseCtx := context.Background()
-	if srv.BaseContext != nil {
-		baseCtx = srv.BaseContext(origListener)
-		if baseCtx == nil {
-			panic("BaseContext returned a nil context")
-		}
-	}
-
-	var tempDelay time.Duration // how long to sleep on accept failure
-
-	ctx := context.WithValue(baseCtx, ServerContextKey, srv)
+	
+    // 略
 	for {
 		rw, err := l.Accept()
 		if err != nil {
@@ -159,16 +115,19 @@ func (sh serverHandler) ServeHTTP(rw ResponseWriter, req *Request) {
 }
 ```
 - 第七层，`DefaultServerMux` 是使用 map 结构来存储和查找路由规则。
+
+
 ```
 // DefaultServeMux is the default ServeMux used by Serve.
-var DefaultServeMux = &defaultServeMux
 
+var DefaultServeMux = &defaultServeMux
 var defaultServeMux ServeMux
 
 // ServeMux is an HTTP request multiplexer.
 // It matches the URL of each incoming request against a list of registered
 // patterns and calls the handler for the pattern that
 // most closely matches the URL.
+
 type ServeMux struct {
 	mu    sync.RWMutex
 	m     map[string]muxEntry
