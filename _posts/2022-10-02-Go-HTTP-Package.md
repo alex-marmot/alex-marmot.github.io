@@ -95,6 +95,7 @@ func (srv *Server) Serve(l net.Listener) error {
 - 第四、五层，serverHandler 结构代表请求对应的处理逻辑，并且通过这个结构进行具体业务逻辑处理。
     代码太长了，只贴出最核心的部分`serverHandler{c.server}.ServeHTTP(w, w.req)`
 - 第六层，Server 数据结构如果没有设置处理函数 Handler，默认使用 `DefaultServerMux` 处理请求。
+
 ```
 // serverHandler delegates to either the server's Handler or
 // DefaultServeMux and also handles "OPTIONS *" requests.
@@ -115,7 +116,6 @@ func (sh serverHandler) ServeHTTP(rw ResponseWriter, req *Request) {
 }
 ```
 - 第七层，`DefaultServerMux` 是使用 map 结构来存储和查找路由规则。
-
 
 ```
 // DefaultServeMux is the default ServeMux used by Serve.
